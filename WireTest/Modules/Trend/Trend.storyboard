@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQJ-uL-gct">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trend View Controller-->
+        <scene sceneID="9JL-P7-zeO">
+            <objects>
+                <viewController id="hQJ-uL-gct" customClass="TrendViewController" customModule="WireTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YZr-fX-P5R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BTE-aq-xsK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hQJ-uL-gct" id="aQv-vi-Lgs"/>
+                                    <outlet property="delegate" destination="hQJ-uL-gct" id="e6X-SI-HcO"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yL8-GV-DB0" customClass="ErrorView" customModule="WireTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <action selector="errorViewTouchUpInside:" destination="hQJ-uL-gct" eventType="touchUpInside" id="kau-ad-IWe"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KxJ-UA-liX" customClass="LoadingView" customModule="WireTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BTE-aq-xsK" firstAttribute="top" secondItem="fSB-U5-VYh" secondAttribute="top" id="5hg-t8-VBY"/>
+                            <constraint firstItem="fSB-U5-VYh" firstAttribute="trailing" secondItem="yL8-GV-DB0" secondAttribute="trailing" id="CN4-wf-5hN"/>
+                            <constraint firstItem="yL8-GV-DB0" firstAttribute="leading" secondItem="fSB-U5-VYh" secondAttribute="leading" id="Lwk-5p-pFG"/>
+                            <constraint firstItem="fSB-U5-VYh" firstAttribute="bottom" secondItem="KxJ-UA-liX" secondAttribute="bottom" id="NVH-Pv-VNV"/>
+                            <constraint firstItem="fSB-U5-VYh" firstAttribute="trailing" secondItem="KxJ-UA-liX" secondAttribute="trailing" id="OP8-XW-d4F"/>
+                            <constraint firstItem="fSB-U5-VYh" firstAttribute="bottom" secondItem="BTE-aq-xsK" secondAttribute="bottom" id="RTk-vl-c6X"/>
+                            <constraint firstItem="KxJ-UA-liX" firstAttribute="leading" secondItem="fSB-U5-VYh" secondAttribute="leading" id="Tc1-n5-oiL"/>
+                            <constraint firstItem="fSB-U5-VYh" firstAttribute="trailing" secondItem="BTE-aq-xsK" secondAttribute="trailing" id="Uaj-62-vQ4"/>
+                            <constraint firstItem="BTE-aq-xsK" firstAttribute="leading" secondItem="fSB-U5-VYh" secondAttribute="leading" id="alj-fU-bIo"/>
+                            <constraint firstItem="yL8-GV-DB0" firstAttribute="top" secondItem="fSB-U5-VYh" secondAttribute="top" id="kof-Nm-CGv"/>
+                            <constraint firstItem="KxJ-UA-liX" firstAttribute="top" secondItem="fSB-U5-VYh" secondAttribute="top" id="qsk-Rk-aza"/>
+                            <constraint firstItem="fSB-U5-VYh" firstAttribute="bottom" secondItem="yL8-GV-DB0" secondAttribute="bottom" id="zph-aH-hqE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fSB-U5-VYh"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorView" destination="yL8-GV-DB0" id="k4u-c8-tCO"/>
+                        <outlet property="loadingView" destination="KxJ-UA-liX" id="LVt-YG-UTc"/>
+                        <outlet property="tableView" destination="BTE-aq-xsK" id="2xr-PV-RmR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8DU-Na-SSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="319"/>
+        </scene>
+    </scenes>
+</document>

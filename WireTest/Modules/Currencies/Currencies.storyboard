@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tmA-9Z-hgT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currencies View Controller-->
+        <scene sceneID="ulo-xo-UgZ">
+            <objects>
+                <viewController id="tmA-9Z-hgT" customClass="CurrenciesViewController" customModule="WireTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="22O-40-iTk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="HXF-bD-lib">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tmA-9Z-hgT" id="bky-zy-dUr"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="giF-hn-0hw">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tmA-9Z-hgT" id="stB-uw-3b3"/>
+                                    <outlet property="delegate" destination="tmA-9Z-hgT" id="3ZF-J0-VSl"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vE7-m2-Bjy" customClass="LoadingView" customModule="WireTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUt-w1-1xw" customClass="ErrorView" customModule="WireTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <action selector="errorViewTouchUpInside:" destination="tmA-9Z-hgT" eventType="touchUpInside" id="3kU-Bt-cU7"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="giF-hn-0hw" firstAttribute="top" secondItem="HXF-bD-lib" secondAttribute="bottom" id="4cG-Rh-4n3"/>
+                            <constraint firstItem="giF-hn-0hw" firstAttribute="leading" secondItem="PlR-41-Kpu" secondAttribute="leading" id="88L-YM-xwW"/>
+                            <constraint firstItem="PlR-41-Kpu" firstAttribute="trailing" secondItem="LUt-w1-1xw" secondAttribute="trailing" id="Fyk-Ir-NlT"/>
+                            <constraint firstItem="HXF-bD-lib" firstAttribute="top" secondItem="PlR-41-Kpu" secondAttribute="top" id="HA6-pq-lyo"/>
+                            <constraint firstItem="HXF-bD-lib" firstAttribute="trailing" secondItem="PlR-41-Kpu" secondAttribute="trailing" id="KTL-6f-s8P"/>
+                            <constraint firstItem="PlR-41-Kpu" firstAttribute="bottom" secondItem="vE7-m2-Bjy" secondAttribute="bottom" id="L3q-Xv-JO8"/>
+                            <constraint firstItem="PlR-41-Kpu" firstAttribute="trailing" secondItem="vE7-m2-Bjy" secondAttribute="trailing" id="Tv2-EH-Xep"/>
+                            <constraint firstItem="LUt-w1-1xw" firstAttribute="top" secondItem="PlR-41-Kpu" secondAttribute="top" id="duT-b9-In1"/>
+                            <constraint firstItem="PlR-41-Kpu" firstAttribute="bottom" secondItem="LUt-w1-1xw" secondAttribute="bottom" id="etG-N0-bTv"/>
+                            <constraint firstItem="vE7-m2-Bjy" firstAttribute="leading" secondItem="PlR-41-Kpu" secondAttribute="leading" id="fnz-Rw-qyH"/>
+                            <constraint firstItem="vE7-m2-Bjy" firstAttribute="top" secondItem="PlR-41-Kpu" secondAttribute="top" id="hLB-kQ-CL9"/>
+                            <constraint firstItem="LUt-w1-1xw" firstAttribute="leading" secondItem="PlR-41-Kpu" secondAttribute="leading" id="nxH-6J-7aC"/>
+                            <constraint firstItem="HXF-bD-lib" firstAttribute="leading" secondItem="PlR-41-Kpu" secondAttribute="leading" id="q4U-Kg-79O"/>
+                            <constraint firstItem="PlR-41-Kpu" firstAttribute="bottom" secondItem="giF-hn-0hw" secondAttribute="bottom" id="rYA-rI-iv5"/>
+                            <constraint firstItem="PlR-41-Kpu" firstAttribute="trailing" secondItem="giF-hn-0hw" secondAttribute="trailing" id="wI2-8Y-rmy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PlR-41-Kpu"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorView" destination="LUt-w1-1xw" id="nFx-Fk-N3A"/>
+                        <outlet property="loadingView" destination="vE7-m2-Bjy" id="0JP-PX-hM4"/>
+                        <outlet property="searchbar" destination="HXF-bD-lib" id="2b7-C1-TRl"/>
+                        <outlet property="tableView" destination="giF-hn-0hw" id="ga6-t7-4a6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAm-hg-NL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="167.41071428571428"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="WireTest" customModuleProvider="target">
+            <connections>
+                <outlet property="headerLabel" destination="jBy-fM-Ylz" id="VFq-K4-2s7"/>
+                <outlet property="messageLabel" destination="Cvf-S6-xlk" id="lhw-ie-ng4"/>
+                <outlet property="retryButton" destination="e8v-Yt-dr3" id="rhu-ZT-Adj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hjc-eV-SlB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAy-aY-Djz">
+                    <rect key="frame" x="40" y="371" width="334" height="154"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wire" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBy-fM-Ylz" userLabel="Label - Title">
+                            <rect key="frame" x="149.5" y="32" width="35.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="textLocalizationKey" value="LoadingErrorHeader"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="An error is occurred" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvf-S6-xlk" userLabel="Label - Message">
+                            <rect key="frame" x="91" y="64.5" width="152.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="textLocalizationKey" value="LoadingErrorExplanation"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-Yt-dr3" userLabel="Button - Retry">
+                            <rect key="frame" x="0.0" y="109" width="334" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="hfx-qE-20F"/>
+                            </constraints>
+                            <state key="normal" title="Retry"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="normalTitleLocalizationKey" value="LoadingErrorCTA"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="retryButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="LgM-Ph-ien"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jBy-fM-Ylz" firstAttribute="centerX" secondItem="jAy-aY-Djz" secondAttribute="centerX" id="3tI-cd-Vxy"/>
+                        <constraint firstItem="jBy-fM-Ylz" firstAttribute="top" secondItem="jAy-aY-Djz" secondAttribute="top" constant="32" id="4FD-2U-9Xj"/>
+                        <constraint firstItem="e8v-Yt-dr3" firstAttribute="leading" secondItem="jAy-aY-Djz" secondAttribute="leading" id="IIo-lC-aN6"/>
+                        <constraint firstItem="e8v-Yt-dr3" firstAttribute="top" secondItem="Cvf-S6-xlk" secondAttribute="bottom" constant="24" id="KGx-Gj-CUr"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cvf-S6-xlk" secondAttribute="trailing" id="UyX-PG-gz2"/>
+                        <constraint firstItem="e8v-Yt-dr3" firstAttribute="centerX" secondItem="jAy-aY-Djz" secondAttribute="centerX" id="Zex-To-PrK"/>
+                        <constraint firstItem="jBy-fM-Ylz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jAy-aY-Djz" secondAttribute="leading" id="nm0-sA-kje"/>
+                        <constraint firstAttribute="bottom" secondItem="e8v-Yt-dr3" secondAttribute="bottom" id="qne-70-BZd"/>
+                        <constraint firstItem="Cvf-S6-xlk" firstAttribute="centerX" secondItem="jAy-aY-Djz" secondAttribute="centerX" id="tb3-Nb-8Su"/>
+                        <constraint firstItem="Cvf-S6-xlk" firstAttribute="top" secondItem="jBy-fM-Ylz" secondAttribute="bottom" constant="12" id="uLG-lS-w4t"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jAy-aY-Djz" firstAttribute="centerX" secondItem="Hjc-eV-SlB" secondAttribute="centerX" id="Ei9-2d-3Ae"/>
+                <constraint firstItem="jAy-aY-Djz" firstAttribute="centerY" secondItem="Hjc-eV-SlB" secondAttribute="centerY" id="NPI-b1-ULB"/>
+                <constraint firstItem="jAy-aY-Djz" firstAttribute="leading" secondItem="OSc-Zd-Q1c" secondAttribute="leading" constant="40" id="hTX-aj-c8N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="OSc-Zd-Q1c"/>
+            <point key="canvasLocation" x="111" y="49"/>
+        </view>
+    </objects>
+</document>
