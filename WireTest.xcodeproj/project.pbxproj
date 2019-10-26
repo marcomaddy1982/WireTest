@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		28A83D3623644DD100D3712A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A83D3523644DD100D3712A /* Assets.xcassets */; };
 		28A83D3923644DD100D3712A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A83D3723644DD100D3712A /* LaunchScreen.storyboard */; };
 		28A83D4423644DD100D3712A /* WireTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A83D4323644DD100D3712A /* WireTestTests.swift */; };
+		8A888B08399641C0F43C4428 /* Pods_WireTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E0FF0C261C03B1DB7BE344 /* Pods_WireTestTests.framework */; };
+		A075385096549BF61D98E207 /* Pods_WireTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46C84B42ECF0FDA8EBB56BD /* Pods_WireTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F658D070E4C9B609B872DE0 /* Pods-WireTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireTestTests.release.xcconfig"; path = "Target Support Files/Pods-WireTestTests/Pods-WireTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		28A83D2923644DD000D3712A /* WireTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WireTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A83D2C23644DD000D3712A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A83D2E23644DD000D3712A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		28A83D3F23644DD100D3712A /* WireTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WireTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A83D4323644DD100D3712A /* WireTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireTestTests.swift; sourceTree = "<group>"; };
 		28A83D4523644DD100D3712A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3567C9A686CE2842FDD5C24 /* Pods-WireTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WireTestTests/Pods-WireTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D46C84B42ECF0FDA8EBB56BD /* Pods_WireTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E0FF0C261C03B1DB7BE344 /* Pods_WireTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DCAB16CF2FA75F22055DF9 /* Pods-WireTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireTest.release.xcconfig"; path = "Target Support Files/Pods-WireTest/Pods-WireTest.release.xcconfig"; sourceTree = "<group>"; };
+		F228D96D7CCBC78B1809C577 /* Pods-WireTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireTest.debug.xcconfig"; path = "Target Support Files/Pods-WireTest/Pods-WireTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A075385096549BF61D98E207 /* Pods_WireTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A888B08399641C0F43C4428 /* Pods_WireTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				28A83D2B23644DD000D3712A /* WireTest */,
 				28A83D4223644DD100D3712A /* WireTestTests */,
 				28A83D2A23644DD000D3712A /* Products */,
+				2FE75C93211EB5718500A4BC /* Pods */,
+				7AC8414903CC6BCCF7AC6A28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,26 @@
 			path = WireTestTests;
 			sourceTree = "<group>";
 		};
+		2FE75C93211EB5718500A4BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F228D96D7CCBC78B1809C577 /* Pods-WireTest.debug.xcconfig */,
+				D9DCAB16CF2FA75F22055DF9 /* Pods-WireTest.release.xcconfig */,
+				D3567C9A686CE2842FDD5C24 /* Pods-WireTestTests.debug.xcconfig */,
+				0F658D070E4C9B609B872DE0 /* Pods-WireTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7AC8414903CC6BCCF7AC6A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D46C84B42ECF0FDA8EBB56BD /* Pods_WireTest.framework */,
+				D7E0FF0C261C03B1DB7BE344 /* Pods_WireTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28A83D4823644DD100D3712A /* Build configuration list for PBXNativeTarget "WireTest" */;
 			buildPhases = (
+				7AE10C6D8AAB16134F563122 /* [CP] Check Pods Manifest.lock */,
 				28A83D2523644DD000D3712A /* Sources */,
 				28A83D2623644DD000D3712A /* Frameworks */,
 				28A83D2723644DD000D3712A /* Resources */,
+				2B558EE6192AA1557E0FA7FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28A83D4B23644DD100D3712A /* Build configuration list for PBXNativeTarget "WireTestTests" */;
 			buildPhases = (
+				5BE9F9853C7DC2CE11E16926 /* [CP] Check Pods Manifest.lock */,
 				28A83D3B23644DD100D3712A /* Sources */,
 				28A83D3C23644DD100D3712A /* Frameworks */,
 				28A83D3D23644DD100D3712A /* Resources */,
+				CDAD3270E0CE38082F537EB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +230,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B558EE6192AA1557E0FA7FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireTest/Pods-WireTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireTest/Pods-WireTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WireTest/Pods-WireTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE9F9853C7DC2CE11E16926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AE10C6D8AAB16134F563122 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAD3270E0CE38082F537EB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireTestTests/Pods-WireTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireTestTests/Pods-WireTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WireTestTests/Pods-WireTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28A83D2523644DD000D3712A /* Sources */ = {
@@ -360,6 +477,7 @@
 		};
 		28A83D4923644DD100D3712A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F228D96D7CCBC78B1809C577 /* Pods-WireTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +495,7 @@
 		};
 		28A83D4A23644DD100D3712A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DCAB16CF2FA75F22055DF9 /* Pods-WireTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,8 +513,8 @@
 		};
 		28A83D4C23644DD100D3712A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3567C9A686CE2842FDD5C24 /* Pods-WireTestTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WireTestTests/Info.plist;
@@ -415,8 +534,8 @@
 		};
 		28A83D4D23644DD100D3712A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F658D070E4C9B609B872DE0 /* Pods-WireTestTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WireTestTests/Info.plist;

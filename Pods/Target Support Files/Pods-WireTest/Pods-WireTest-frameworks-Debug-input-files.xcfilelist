@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-WireTest/Pods-WireTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Networking/Networking.framework
+${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
+${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework

@@ -1,0 +1,22 @@
+{
+  "name": "Networking",
+  "version": "0.1.0",
+  "summary": "Networking API",
+  "description": "Networking API for Intive Discovery wirtten by Marco Maddalena",
+  "homepage": "https://github.com/marcomaddy1982/Networking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Marco Maddalena": "marco.maddalena@intive.com"
+  },
+  "source": {
+    "git": "https://github.com/marcomaddy1982/Networking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Networking/**/*.{swift}"
+}

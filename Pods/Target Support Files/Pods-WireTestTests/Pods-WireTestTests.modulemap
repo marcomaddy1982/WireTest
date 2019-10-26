@@ -1,0 +1,6 @@
+framework module Pods_WireTestTests {
+  umbrella header "Pods-WireTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
