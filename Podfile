@@ -8,7 +8,6 @@ inhibit_all_warnings!
 
 def app_pods
 	pod 'Reusable'
-	pod 'Nuke'
   pod 'Networking', :git => 'https://github.com/marcomaddy1982/Networking.git', :branch => 'Wire'
 end
 
