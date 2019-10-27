@@ -1,13 +1,13 @@
 //
-//  TrendViewModel.swift
+//  TrendsViewModel.swift
 //  WireTest
 //
 //  Created by Marco Maddalena on 26.10.19.
 //  Copyright © 2019 Wire. All rights reserved.
 //
 
-enum TrendViewModel {
-    case data(TrendViewModelData)
+enum TrendsViewModel {
+    case data(TrendsViewModelData)
     case error
     case loading
 
@@ -22,7 +22,7 @@ enum TrendViewModel {
     }
 }
 
-struct TrendViewModelData {
+struct TrendsViewModelData {
     private var currency: String
     private var trends: [Trend]
 

@@ -1,5 +1,5 @@
 //
-//  TrendViewController.swift
+//  TrendsViewController.swift
 //  WireTest
 //
 //  Created by Marco Maddalena on 26.10.19.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-protocol TrendViewProtocol: class {
-    func refresh(with viewModel: TrendViewModel)
+protocol TrendsViewProtocol: class {
+    func refresh(with viewModel: TrendsViewModel)
 }
 
-class TrendViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TrendsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet private var errorView: ErrorView!
     @IBOutlet private var loadingView: LoadingView!
     @IBOutlet private var tableView: UITableView!
 
-    var presenter: TrendPresenterProtocol!
+    var presenter: TrendsPresenterProtocol!
 
     private var trends: [Trend] = [] {
         didSet {
@@ -63,10 +63,10 @@ class TrendViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
 }
 
-// MARK: - TrendViewProtocol
+// MARK: - TrendsViewProtocol
 
-extension TrendViewController: TrendViewProtocol {
-    func refresh(with viewModel: TrendViewModel) {
+extension TrendsViewController: TrendsViewProtocol {
+    func refresh(with viewModel: TrendsViewModel) {
         DispatchQueue.main.async {
             if case .data(let trends) = viewModel {
                 self.title = trends.title

@@ -1,5 +1,5 @@
 //
-//  TrendTask.swift
+//  TrendsRequest.swift
 //  WireTest
 //
 //  Created by Marco Maddalena on 26.10.19.
@@ -8,17 +8,14 @@
 
 import Networking
 
-final class TrendTask: JSONTask {
-    typealias Output = CurrencyOwerview
+struct TrendsRequest: Request {
 
     let date: String
     init(date: String) {
         self.date = date
     }
 
-    var state: TaskState = .none
-
-    var request: Request {
-        return TrendRequest(date: date)
+    var path: String {
+        return date
     }
 }

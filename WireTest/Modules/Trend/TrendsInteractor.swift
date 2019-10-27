@@ -1,30 +1,30 @@
 //
-//  TrendInteractor.swift
+//  TrendsInteractor.swift
 //  WireTest
 //
 //  Created by Marco Maddalena on 26.10.19.
 //  Copyright © 2019 Wire. All rights reserved.
 //
 
-protocol TrendInteractorProtocol {
+protocol TrendsInteractorProtocol {
     func loadContents()
 }
 
-class TrendInteractor {
-    weak var presenter: TrendPresenterProtocol!
-    private var contentManager: TrendContentManagerProtocol!
+class TrendsInteractor {
+    weak var presenter: TrendsPresenterProtocol!
+    private var contentManager: TrendsContentManagerProtocol!
     private var currency: String!
 
-    init(currency: String, contentManager: TrendContentManagerProtocol) {
+    init(currency: String, contentManager: TrendsContentManagerProtocol) {
         self.currency = currency
         self.contentManager = contentManager
     }
 }
 
-extension TrendInteractor: TrendInteractorProtocol {
+extension TrendsInteractor: TrendsInteractorProtocol {
     func loadContents() {
         presenter.refresh(with: .loading)
-        contentManager.getTrend(for: currency) { [weak self] trendViewModel in
+        contentManager.getTrends(for: currency) { [weak self] trendViewModel in
             self?.presenter.refresh(with: trendViewModel)
         }
     }

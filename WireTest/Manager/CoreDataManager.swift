@@ -64,12 +64,11 @@ struct CoreDataManager {
     // MARK: Utils
 
     func addStoreCoordinator(_ storeType: String, configuration: String?, storeURL: URL, options : [NSObject:AnyObject]?) throws {
-
         try coordinator.addPersistentStore(ofType: NSInMemoryStoreType, configurationName: nil, at: dbURL, options: options)
     }
 }
 
-// MARK: - CoreDataManager (Save Data)
+// MARK: - CoreDataManager - Save Data
 
 extension CoreDataManager {
     func saveContext() throws {

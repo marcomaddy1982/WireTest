@@ -1,5 +1,5 @@
 //
-//  TrendContentManager.swift
+//  TrendsContentManager.swift
 //  WireTest
 //
 //  Created by Marco Maddalena on 26.10.19.
@@ -8,11 +8,11 @@
 
 import Networking
 
-protocol TrendContentManagerProtocol {
-    func getTrend(for currency: String, completion: @escaping (TrendViewModel) -> ())
+protocol TrendsContentManagerProtocol {
+    func getTrends(for currency: String, completion: @escaping (TrendsViewModel) -> ())
 }
 
-class TrendContentManager: TrendContentManagerProtocol {
+class TrendsContentManager: TrendsContentManagerProtocol {
     private let requestDispatcher = RequestDispatcher(environment: EnvironmentCreator.environment(for: .prod))
     private let dates = [
         "2019-01-01",
@@ -24,14 +24,14 @@ class TrendContentManager: TrendContentManagerProtocol {
         "2019-07-01"
     ]
 
-    func getTrend(for currency: String, completion: @escaping (TrendViewModel) -> ()) {
+    func getTrends(for currency: String, completion: @escaping (TrendsViewModel) -> ()) {
         let dispatchGroup = DispatchGroup()
         var trends = [Trend](repeating: Trend.empty, count: dates.count)
 
         DispatchQueue.global(qos: .background).async {
             for (index, date) in self.dates.enumerated() {
                dispatchGroup.enter()
-                TrendTask(date: date).execute(in: self.requestDispatcher) { result in
+                TrendsTask(date: date).execute(in: self.requestDispatcher) { result in
                     var state: Trend.State = .notAvailable
                     var currencyValue: Float = 0
 
@@ -56,10 +56,9 @@ class TrendContentManager: TrendContentManagerProtocol {
             
             DispatchQueue.main.async {
                 if trends.first(where: { $0.state == .valid }) != nil {
-                    completion(.data(TrendViewModelData(currency: currency, trends: trends)))
+                    completion(.data(TrendsViewModelData(currency: currency, trends: trends)))
                     return
                 }
-
                 completion(.error)
             }
         }

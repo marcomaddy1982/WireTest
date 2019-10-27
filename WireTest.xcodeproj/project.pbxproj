@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		28080B442364D4BA00ADE0B3 /* Wire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28080B422364D4BA00ADE0B3 /* Wire.xcdatamodeld */; };
+		28080B4723658D9C00ADE0B3 /* CurrencyOwerviewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28080B4623658D9C00ADE0B3 /* CurrencyOwerviewSpec.swift */; };
+		28080B4B23658F1100ADE0B3 /* currenciesMockFail.json in Resources */ = {isa = PBXBuildFile; fileRef = 28080B4923658F1100ADE0B3 /* currenciesMockFail.json */; };
+		28080B4C23658F1100ADE0B3 /* currenciesMockPass.json in Resources */ = {isa = PBXBuildFile; fileRef = 28080B4A23658F1100ADE0B3 /* currenciesMockPass.json */; };
+		281D0EBE2365917700FFB6AD /* CurrenciesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0EBD2365917700FFB6AD /* CurrenciesViewModelSpec.swift */; };
+		281D0EC023659B7A00FFB6AD /* CurrenciesViewModelDataSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0EBF23659B7A00FFB6AD /* CurrenciesViewModelDataSpec.swift */; };
+		281D0EC22365A0F500FFB6AD /* TrendsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0EC12365A0F500FFB6AD /* TrendsViewModelSpec.swift */; };
+		281D0EC42365A27200FFB6AD /* TrendsViewModelDataSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0EC32365A27200FFB6AD /* TrendsViewModelDataSpec.swift */; };
+		281D0EC62365A38C00FFB6AD /* TrendCellViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0EC52365A38C00FFB6AD /* TrendCellViewModelSpecs.swift */; };
+		281D0EC92365A67F00FFB6AD /* MockCurrencyOwerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0EC82365A67F00FFB6AD /* MockCurrencyOwerview.swift */; };
+		281D0ECB2365A6F900FFB6AD /* MockTrend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0ECA2365A6F900FFB6AD /* MockTrend.swift */; };
+		281D0ECF2365AF0A00FFB6AD /* MockCurrenciesContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0ECE2365AF0A00FFB6AD /* MockCurrenciesContentManager.swift */; };
+		281D0ED12365B0C200FFB6AD /* MockCurrenciesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0ED02365B0C200FFB6AD /* MockCurrenciesPresenter.swift */; };
+		281D0ED32365B19400FFB6AD /* MockCurrenciesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0ED22365B19400FFB6AD /* MockCurrenciesInteractor.swift */; };
+		281D0ED52365B20000FFB6AD /* MockCurrenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0ED42365B20000FFB6AD /* MockCurrenciesView.swift */; };
+		281D0ED72365B31100FFB6AD /* CurrenciesInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0ED62365B31100FFB6AD /* CurrenciesInteractorSpec.swift */; };
+		281D0ED92365B45400FFB6AD /* CurrenciesPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D0ED82365B45400FFB6AD /* CurrenciesPresenterSpec.swift */; };
 		285A73D52364CDD80007F92C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A73D42364CDD80007F92C /* CoreDataManager.swift */; };
 		285C7C822364A5EB00AA67F7 /* TrendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C7C802364A5EB00AA67F7 /* TrendCell.swift */; };
 		285C7C832364A5EB00AA67F7 /* TrendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285C7C812364A5EB00AA67F7 /* TrendCell.xib */; };
@@ -16,7 +32,6 @@
 		28A83D2F23644DD000D3712A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A83D2E23644DD000D3712A /* SceneDelegate.swift */; };
 		28A83D3623644DD100D3712A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A83D3523644DD100D3712A /* Assets.xcassets */; };
 		28A83D3923644DD100D3712A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A83D3723644DD100D3712A /* LaunchScreen.storyboard */; };
-		28A83D4423644DD100D3712A /* WireTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A83D4323644DD100D3712A /* WireTestTests.swift */; };
 		28A83D52236455E900D3712A /* CurrenciesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A83D51236455E900D3712A /* CurrenciesRequest.swift */; };
 		28A83D54236455FC00D3712A /* CurrenciesTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A83D53236455FC00D3712A /* CurrenciesTask.swift */; };
 		28A83D57236457F400D3712A /* CurrencyOwerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A83D56236457F300D3712A /* CurrencyOwerview.swift */; };
@@ -36,16 +51,16 @@
 		28B0D0372364743E00C80F5C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B0D0362364743E00C80F5C /* LoadingView.xib */; };
 		28B0D03C2364781100C80F5C /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D03A2364781100C80F5C /* CurrencyCell.swift */; };
 		28B0D03D2364781100C80F5C /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B0D03B2364781100C80F5C /* CurrencyCell.xib */; };
-		28B0D0402364825900C80F5C /* TrendContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D03F2364825900C80F5C /* TrendContentManager.swift */; };
-		28B0D042236484E200C80F5C /* TrendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D041236484E200C80F5C /* TrendRequest.swift */; };
-		28B0D044236484ED00C80F5C /* TrendTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D043236484ED00C80F5C /* TrendTask.swift */; };
-		28B0D046236488B300C80F5C /* TrendInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D045236488B300C80F5C /* TrendInteractor.swift */; };
-		28B0D048236488C300C80F5C /* TrendPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D047236488C300C80F5C /* TrendPresenter.swift */; };
-		28B0D04A236488CE00C80F5C /* TrendRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D049236488CE00C80F5C /* TrendRouter.swift */; };
-		28B0D04C236488DB00C80F5C /* TrendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D04B236488DB00C80F5C /* TrendViewModel.swift */; };
+		28B0D0402364825900C80F5C /* TrendsContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D03F2364825900C80F5C /* TrendsContentManager.swift */; };
+		28B0D042236484E200C80F5C /* TrendsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D041236484E200C80F5C /* TrendsRequest.swift */; };
+		28B0D044236484ED00C80F5C /* TrendsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D043236484ED00C80F5C /* TrendsTask.swift */; };
+		28B0D046236488B300C80F5C /* TrendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D045236488B300C80F5C /* TrendsInteractor.swift */; };
+		28B0D048236488C300C80F5C /* TrendsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D047236488C300C80F5C /* TrendsPresenter.swift */; };
+		28B0D04A236488CE00C80F5C /* TrendsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D049236488CE00C80F5C /* TrendsRouter.swift */; };
+		28B0D04C236488DB00C80F5C /* TrendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D04B236488DB00C80F5C /* TrendsViewModel.swift */; };
 		28B0D04E236488E700C80F5C /* TrendWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D04D236488E700C80F5C /* TrendWireFrame.swift */; };
-		28B0D050236488FF00C80F5C /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D04F236488FF00C80F5C /* TrendViewController.swift */; };
-		28B0D0522364890800C80F5C /* Trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B0D0512364890800C80F5C /* Trend.storyboard */; };
+		28B0D050236488FF00C80F5C /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D04F236488FF00C80F5C /* TrendsViewController.swift */; };
+		28B0D0522364890800C80F5C /* Trends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B0D0512364890800C80F5C /* Trends.storyboard */; };
 		28B0D05423648F3900C80F5C /* Trend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0D05323648F3900C80F5C /* Trend.swift */; };
 		8A888B08399641C0F43C4428 /* Pods_WireTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E0FF0C261C03B1DB7BE344 /* Pods_WireTestTests.framework */; };
 		A075385096549BF61D98E207 /* Pods_WireTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46C84B42ECF0FDA8EBB56BD /* Pods_WireTest.framework */; };
@@ -64,6 +79,22 @@
 /* Begin PBXFileReference section */
 		0F658D070E4C9B609B872DE0 /* Pods-WireTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireTestTests.release.xcconfig"; path = "Target Support Files/Pods-WireTestTests/Pods-WireTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		28080B432364D4BA00ADE0B3 /* Wire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wire.xcdatamodel; sourceTree = "<group>"; };
+		28080B4623658D9C00ADE0B3 /* CurrencyOwerviewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyOwerviewSpec.swift; sourceTree = "<group>"; };
+		28080B4923658F1100ADE0B3 /* currenciesMockFail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currenciesMockFail.json; sourceTree = "<group>"; };
+		28080B4A23658F1100ADE0B3 /* currenciesMockPass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currenciesMockPass.json; sourceTree = "<group>"; };
+		281D0EBD2365917700FFB6AD /* CurrenciesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModelSpec.swift; sourceTree = "<group>"; };
+		281D0EBF23659B7A00FFB6AD /* CurrenciesViewModelDataSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModelDataSpec.swift; sourceTree = "<group>"; };
+		281D0EC12365A0F500FFB6AD /* TrendsViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewModelSpec.swift; sourceTree = "<group>"; };
+		281D0EC32365A27200FFB6AD /* TrendsViewModelDataSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewModelDataSpec.swift; sourceTree = "<group>"; };
+		281D0EC52365A38C00FFB6AD /* TrendCellViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCellViewModelSpecs.swift; sourceTree = "<group>"; };
+		281D0EC82365A67F00FFB6AD /* MockCurrencyOwerview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyOwerview.swift; sourceTree = "<group>"; };
+		281D0ECA2365A6F900FFB6AD /* MockTrend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrend.swift; sourceTree = "<group>"; };
+		281D0ECE2365AF0A00FFB6AD /* MockCurrenciesContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrenciesContentManager.swift; sourceTree = "<group>"; };
+		281D0ED02365B0C200FFB6AD /* MockCurrenciesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrenciesPresenter.swift; sourceTree = "<group>"; };
+		281D0ED22365B19400FFB6AD /* MockCurrenciesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrenciesInteractor.swift; sourceTree = "<group>"; };
+		281D0ED42365B20000FFB6AD /* MockCurrenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrenciesView.swift; sourceTree = "<group>"; };
+		281D0ED62365B31100FFB6AD /* CurrenciesInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesInteractorSpec.swift; sourceTree = "<group>"; };
+		281D0ED82365B45400FFB6AD /* CurrenciesPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesPresenterSpec.swift; sourceTree = "<group>"; };
 		285A73D42364CDD80007F92C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		285C7C802364A5EB00AA67F7 /* TrendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCell.swift; sourceTree = "<group>"; };
 		285C7C812364A5EB00AA67F7 /* TrendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendCell.xib; sourceTree = "<group>"; };
@@ -75,7 +106,6 @@
 		28A83D3823644DD100D3712A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A83D3A23644DD100D3712A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A83D3F23644DD100D3712A /* WireTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WireTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28A83D4323644DD100D3712A /* WireTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireTestTests.swift; sourceTree = "<group>"; };
 		28A83D4523644DD100D3712A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A83D51236455E900D3712A /* CurrenciesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRequest.swift; sourceTree = "<group>"; };
 		28A83D53236455FC00D3712A /* CurrenciesTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTask.swift; sourceTree = "<group>"; };
@@ -96,16 +126,16 @@
 		28B0D0362364743E00C80F5C /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		28B0D03A2364781100C80F5C /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		28B0D03B2364781100C80F5C /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
-		28B0D03F2364825900C80F5C /* TrendContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendContentManager.swift; sourceTree = "<group>"; };
-		28B0D041236484E200C80F5C /* TrendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendRequest.swift; sourceTree = "<group>"; };
-		28B0D043236484ED00C80F5C /* TrendTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTask.swift; sourceTree = "<group>"; };
-		28B0D045236488B300C80F5C /* TrendInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendInteractor.swift; sourceTree = "<group>"; };
-		28B0D047236488C300C80F5C /* TrendPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendPresenter.swift; sourceTree = "<group>"; };
-		28B0D049236488CE00C80F5C /* TrendRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendRouter.swift; sourceTree = "<group>"; };
-		28B0D04B236488DB00C80F5C /* TrendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewModel.swift; sourceTree = "<group>"; };
+		28B0D03F2364825900C80F5C /* TrendsContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsContentManager.swift; sourceTree = "<group>"; };
+		28B0D041236484E200C80F5C /* TrendsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsRequest.swift; sourceTree = "<group>"; };
+		28B0D043236484ED00C80F5C /* TrendsTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsTask.swift; sourceTree = "<group>"; };
+		28B0D045236488B300C80F5C /* TrendsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsInteractor.swift; sourceTree = "<group>"; };
+		28B0D047236488C300C80F5C /* TrendsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsPresenter.swift; sourceTree = "<group>"; };
+		28B0D049236488CE00C80F5C /* TrendsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsRouter.swift; sourceTree = "<group>"; };
+		28B0D04B236488DB00C80F5C /* TrendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewModel.swift; sourceTree = "<group>"; };
 		28B0D04D236488E700C80F5C /* TrendWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendWireFrame.swift; sourceTree = "<group>"; };
-		28B0D04F236488FF00C80F5C /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
-		28B0D0512364890800C80F5C /* Trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trend.storyboard; sourceTree = "<group>"; };
+		28B0D04F236488FF00C80F5C /* TrendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
+		28B0D0512364890800C80F5C /* Trends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trends.storyboard; sourceTree = "<group>"; };
 		28B0D05323648F3900C80F5C /* Trend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trend.swift; sourceTree = "<group>"; };
 		D3567C9A686CE2842FDD5C24 /* Pods-WireTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WireTestTests/Pods-WireTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D46C84B42ECF0FDA8EBB56BD /* Pods_WireTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +164,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28080B4523658D8D00ADE0B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				281D0EC72365A66500FFB6AD /* Mocks */,
+				28080B4623658D9C00ADE0B3 /* CurrencyOwerviewSpec.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28080B4823658F0000ADE0B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28080B4923658F1100ADE0B3 /* currenciesMockFail.json */,
+				28080B4A23658F1100ADE0B3 /* currenciesMockPass.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		281D0EBC2365915300FFB6AD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				281D0EBF23659B7A00FFB6AD /* CurrenciesViewModelDataSpec.swift */,
+				281D0EBD2365917700FFB6AD /* CurrenciesViewModelSpec.swift */,
+				281D0EC52365A38C00FFB6AD /* TrendCellViewModelSpecs.swift */,
+				281D0EC32365A27200FFB6AD /* TrendsViewModelDataSpec.swift */,
+				281D0EC12365A0F500FFB6AD /* TrendsViewModelSpec.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		281D0EC72365A66500FFB6AD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				281D0EC82365A67F00FFB6AD /* MockCurrencyOwerview.swift */,
+				281D0ECA2365A6F900FFB6AD /* MockTrend.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		281D0ECC2365A90400FFB6AD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				281D0ECD2365ABE600FFB6AD /* Mocks */,
+				281D0ED62365B31100FFB6AD /* CurrenciesInteractorSpec.swift */,
+				281D0ED82365B45400FFB6AD /* CurrenciesPresenterSpec.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		281D0ECD2365ABE600FFB6AD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				281D0ECE2365AF0A00FFB6AD /* MockCurrenciesContentManager.swift */,
+				281D0ED02365B0C200FFB6AD /* MockCurrenciesPresenter.swift */,
+				281D0ED22365B19400FFB6AD /* MockCurrenciesInteractor.swift */,
+				281D0ED42365B20000FFB6AD /* MockCurrenciesView.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		285A73D32364CDB80007F92C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,8 +281,11 @@
 		28A83D4223644DD100D3712A /* WireTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				28A83D4323644DD100D3712A /* WireTestTests.swift */,
 				28A83D4523644DD100D3712A /* Info.plist */,
+				28080B4523658D8D00ADE0B3 /* Model */,
+				281D0ECC2365A90400FFB6AD /* Modules */,
+				28080B4823658F0000ADE0B3 /* Resources */,
+				281D0EBC2365915300FFB6AD /* ViewModels */,
 			);
 			path = WireTestTests;
 			sourceTree = "<group>";
@@ -210,7 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				28A83D53236455FC00D3712A /* CurrenciesTask.swift */,
-				28B0D043236484ED00C80F5C /* TrendTask.swift */,
+				28B0D043236484ED00C80F5C /* TrendsTask.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -219,7 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				28A83D51236455E900D3712A /* CurrenciesRequest.swift */,
-				28B0D041236484E200C80F5C /* TrendRequest.swift */,
+				28B0D041236484E200C80F5C /* TrendsRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -302,14 +395,14 @@
 			isa = PBXGroup;
 			children = (
 				285C7C7F2364A5C400AA67F7 /* Cells */,
-				28B0D03F2364825900C80F5C /* TrendContentManager.swift */,
-				28B0D045236488B300C80F5C /* TrendInteractor.swift */,
-				28B0D047236488C300C80F5C /* TrendPresenter.swift */,
-				28B0D049236488CE00C80F5C /* TrendRouter.swift */,
-				28B0D04B236488DB00C80F5C /* TrendViewModel.swift */,
+				28B0D03F2364825900C80F5C /* TrendsContentManager.swift */,
+				28B0D045236488B300C80F5C /* TrendsInteractor.swift */,
+				28B0D047236488C300C80F5C /* TrendsPresenter.swift */,
+				28B0D049236488CE00C80F5C /* TrendsRouter.swift */,
+				28B0D04B236488DB00C80F5C /* TrendsViewModel.swift */,
 				28B0D04D236488E700C80F5C /* TrendWireFrame.swift */,
-				28B0D04F236488FF00C80F5C /* TrendViewController.swift */,
-				28B0D0512364890800C80F5C /* Trend.storyboard */,
+				28B0D04F236488FF00C80F5C /* TrendsViewController.swift */,
+				28B0D0512364890800C80F5C /* Trends.storyboard */,
 			);
 			path = Trend;
 			sourceTree = "<group>";
@@ -419,7 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B0D0522364890800C80F5C /* Trend.storyboard in Resources */,
+				28B0D0522364890800C80F5C /* Trends.storyboard in Resources */,
 				28A83D3923644DD100D3712A /* LaunchScreen.storyboard in Resources */,
 				28A83D3623644DD100D3712A /* Assets.xcassets in Resources */,
 				285C7C832364A5EB00AA67F7 /* TrendCell.xib in Resources */,
@@ -434,6 +527,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28080B4B23658F1100ADE0B3 /* currenciesMockFail.json in Resources */,
+				28080B4C23658F1100ADE0B3 /* currenciesMockPass.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,24 +626,24 @@
 				285C7C822364A5EB00AA67F7 /* TrendCell.swift in Sources */,
 				28A83D2D23644DD000D3712A /* AppDelegate.swift in Sources */,
 				28A83D67236464F100D3712A /* CurrenciesViewController.swift in Sources */,
-				28B0D048236488C300C80F5C /* TrendPresenter.swift in Sources */,
-				28B0D042236484E200C80F5C /* TrendRequest.swift in Sources */,
+				28B0D048236488C300C80F5C /* TrendsPresenter.swift in Sources */,
+				28B0D042236484E200C80F5C /* TrendsRequest.swift in Sources */,
 				28080B442364D4BA00ADE0B3 /* Wire.xcdatamodeld in Sources */,
 				28A83D5B23645D2C00D3712A /* CurrenciesContentManager.swift in Sources */,
 				285C7C852364A73C00AA67F7 /* TrendCellViewModel.swift in Sources */,
-				28B0D0402364825900C80F5C /* TrendContentManager.swift in Sources */,
+				28B0D0402364825900C80F5C /* TrendsContentManager.swift in Sources */,
 				28A83D5D23645E1100D3712A /* CurrenciesInteractor.swift in Sources */,
 				28B0D0352364742100C80F5C /* LoadingView.swift in Sources */,
 				28A83D54236455FC00D3712A /* CurrenciesTask.swift in Sources */,
 				28B0D04E236488E700C80F5C /* TrendWireFrame.swift in Sources */,
-				28B0D050236488FF00C80F5C /* TrendViewController.swift in Sources */,
-				28B0D044236484ED00C80F5C /* TrendTask.swift in Sources */,
+				28B0D050236488FF00C80F5C /* TrendsViewController.swift in Sources */,
+				28B0D044236484ED00C80F5C /* TrendsTask.swift in Sources */,
 				28A83D52236455E900D3712A /* CurrenciesRequest.swift in Sources */,
 				285A73D52364CDD80007F92C /* CoreDataManager.swift in Sources */,
-				28B0D046236488B300C80F5C /* TrendInteractor.swift in Sources */,
-				28B0D04A236488CE00C80F5C /* TrendRouter.swift in Sources */,
+				28B0D046236488B300C80F5C /* TrendsInteractor.swift in Sources */,
+				28B0D04A236488CE00C80F5C /* TrendsRouter.swift in Sources */,
 				28A83D6B2364655A00D3712A /* UIStoryboard+Typed.swift in Sources */,
-				28B0D04C236488DB00C80F5C /* TrendViewModel.swift in Sources */,
+				28B0D04C236488DB00C80F5C /* TrendsViewModel.swift in Sources */,
 				28A83D632364636800D3712A /* CurrenciesRouter.swift in Sources */,
 				28A83D57236457F400D3712A /* CurrencyOwerview.swift in Sources */,
 				28B0D031236473A500C80F5C /* ErrorView.swift in Sources */,
@@ -563,7 +658,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A83D4423644DD100D3712A /* WireTestTests.swift in Sources */,
+				281D0EC42365A27200FFB6AD /* TrendsViewModelDataSpec.swift in Sources */,
+				281D0ED12365B0C200FFB6AD /* MockCurrenciesPresenter.swift in Sources */,
+				281D0ECB2365A6F900FFB6AD /* MockTrend.swift in Sources */,
+				281D0EC92365A67F00FFB6AD /* MockCurrencyOwerview.swift in Sources */,
+				281D0ECF2365AF0A00FFB6AD /* MockCurrenciesContentManager.swift in Sources */,
+				281D0EC023659B7A00FFB6AD /* CurrenciesViewModelDataSpec.swift in Sources */,
+				281D0ED92365B45400FFB6AD /* CurrenciesPresenterSpec.swift in Sources */,
+				281D0ED32365B19400FFB6AD /* MockCurrenciesInteractor.swift in Sources */,
+				281D0EBE2365917700FFB6AD /* CurrenciesViewModelSpec.swift in Sources */,
+				28080B4723658D9C00ADE0B3 /* CurrencyOwerviewSpec.swift in Sources */,
+				281D0EC22365A0F500FFB6AD /* TrendsViewModelSpec.swift in Sources */,
+				281D0ED72365B31100FFB6AD /* CurrenciesInteractorSpec.swift in Sources */,
+				281D0EC62365A38C00FFB6AD /* TrendCellViewModelSpecs.swift in Sources */,
+				281D0ED52365B20000FFB6AD /* MockCurrenciesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@ class CurrenciesRouter {
 
 extension CurrenciesRouter: CurrenciesRouterProtocol {
     func showTrend(for currency: String) {
-        let trendRouter = TrendRouter(currency: currency)
+        let trendRouter = TrendsRouter(currency: currency)
         viewController.navigationController?.pushViewController(trendRouter.viewController, animated: true)
     }
 }

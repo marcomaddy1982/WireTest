@@ -55,8 +55,8 @@ class CurrenciesViewController: UIViewController {
 extension CurrenciesViewController: CurrenciesViewProtocol {
     func refresh(with viewModel: CurrenciesViewModel) {
         DispatchQueue.main.async {
-            if case .data(let currencies) = viewModel {
-                self.currencies = currencies
+            if case .data(let currencieOverview) = viewModel {
+                self.currencies = currencieOverview.currencies
             }
             self.errorView.isHidden = !viewModel.isError
             self.loadingView.isHidden = !viewModel.isLoading

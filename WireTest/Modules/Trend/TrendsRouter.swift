@@ -1,5 +1,5 @@
 //
-//  TrendRouter.swift
+//  TrendsRouter.swift
 //  WireTest
 //
 //  Created by Marco Maddalena on 26.10.19.
@@ -8,21 +8,21 @@
 
 import UIKit
 
-protocol TrendRouterProtocol { }
+protocol TrendsRouterProtocol { }
 
-class TrendRouter {
+class TrendsRouter {
     var viewController: UIViewController {
         let viewController = _viewController ?? builder.build(router: self)
         _viewController = viewController
         return viewController
     }
 
-    private let builder: TrendWireFrame
-    private weak var _viewController: TrendViewController?
+    private let builder: TrendsWireFrame
+    private weak var _viewController: TrendsViewController?
 
     init(currency: String) {
-        builder = TrendWireFrame(currency: currency)
+        builder = TrendsWireFrame(currency: currency)
     }
 }
 
-extension TrendRouter: TrendRouterProtocol { }
+extension TrendsRouter: TrendsRouterProtocol { }
