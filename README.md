@@ -13,8 +13,11 @@ WireTest is an iOS application for check the currencies trends respect the EUR.
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Running the project](#running-the-project)
-- [Daily Development](#daily-development)
 - [Run Tests](#run-tests)
+- [Development Flow 1](#development-flow-1)
+- [Development Flow 1](#fevelopment-flow-2)
+- [New Ideas](#new-ideas)
+- [Development Time](#development-time)
 
 ---
 
@@ -54,7 +57,9 @@ To run the app from Xcode, open the workspace file `WireTest.xcodeproj` and run 
 
 To run the tests , open the workspace file `WireTest.xcodeproj` and run the Scheme `WireTestTests`. Choose a simulator, and `⌘U`
 
-## Development Flow (Part 1 - 5 hours)
+---
+
+## Development Flow 1
 
 1) Decide the patter -> VIPER + ContentManager + WireFrame. 
 The duties of the ContentManager class is to get the date from the service (business logic). It is injected in the Interactor (using Dependency Injection) and it usually implements a protocol with functions using a completion block to propagate the date to the Interactor (i.e func getCurrencies(completion: @escaping (CurrenciesViewModel) -> ())). The reason why I decided to use the ContentManager is because is simple to mock and easier write tests to the Interactor 
@@ -69,11 +74,15 @@ The duty of the WireFrame layes is to build the module. (It could also be made d
 8) Write Tests for Models and ViewModels
 9) Write Tests for Interactor and Presnter (just for the Currencies Module)
 
-## Development Flow (Part 2 - 1,5 hours)
+---
+
+## Development Flow 2
 
 1) Added Coredata -> Models and CoreDataManager (PersistentStore Type: NSInMemoryStoreType)
 2) Implement the Search Action using CoreData
 3) Add Loadgin and Error Screen
+
+---
 
 ## New Ideas
 
@@ -82,3 +91,7 @@ The duty of the WireFrame layes is to build the module. (It could also be made d
 3) Improve the Design
 
 ---
+
+## Development Time
+1) Development Flow 1: 5 hours
+1) Development Flow 2: 1,5 hours
