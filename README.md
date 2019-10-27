@@ -15,7 +15,7 @@ WireTest is an iOS application for check the currencies trends respect the EUR.
 - [Running the project](#running-the-project)
 - [Run Tests](#run-tests)
 - [Development Flow 1](#development-flow-1)
-- [Development Flow 2](#fevelopment-flow-2)
+- [Development Flow 2](#development-flow-2)
 - [New Ideas](#new-ideas)
 - [Development Time](#development-time)
 
