@@ -62,8 +62,7 @@ To run the tests , open the workspace file `WireTest.xcodeproj` and run the Sche
 ## Development Flow 1
 
 1) Decide the patter -> VIPER + ContentManager + WireFrame. 
-The duties of the ContentManager class is to get the date from the service (business logic). It is injected in the Interactor (using Dependency Injection) and it usually implements a protocol with functions using a completion block to propagate the date to the Interactor (i.e func getCurrencies(completion: @escaping (CurrenciesViewModel) -> ())). The reason why I decided to use the ContentManager is because is simple to mock and easier write tests to the Interactor 
-The duty of the WireFrame layes is to build the module. (It could also be made directly in the Router).
+The duties of the ContentManager class is to get the date from the service (business logic). It is injected in the Interactor (using Dependency Injection) and it usually implements a protocol with functions using a completion block to propagate the data to the Interactor. In thia manner is easier mock and write tests for the Interactor layer.
 
 2) Check the request response and create a model for it.
 3) Implement the Currencies Module (ViewController, Interactor, Presenter, Router, WireFrame, ViewModels)
